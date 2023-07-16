@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
 
-:root {
+:root, :root[data-theme='dark'] {
   --primary-color: #F0F0F0;
 
   --primary-bg-color: #111217;
   --secondary-bg-color: #28292E;
-  --border-color: #28292E;
+  --primary-border-color: #28292E;
+	--secondary-border-color: #56575A;
 
-  --title-color: #9A9A9C;
+  --title-color: #F0F0F0;
   --text-color: #9A9A9C;
   --link-color: #9A9A9C;
   --icon-color: #C7C8C9;
+}
+
+:root[data-theme='light'] {
+  --primary-color: #0B0B0F;
+
+	--primary-bg-color: #E9E9E9;
+	--secondary-bg-color: #C7C8C9;
+	--primary-border-color: #C7C8C9;
+	--secondary-border-color: #C7C8C9;
+
+	--title-color: #0B0B0F;
+	--text-color: #28292E;
+	--link-color: #28292E;
+	--icon-color: #56575A;
+}
+
+html[data-theme='light'] .brand__logo {
+  filter: invert(1);
 }
 
 * {
@@ -41,6 +61,27 @@ i {
   color: var(--icon-color);
 }
 
+b {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+h1, h2, h3 {
+  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
 .header {
   display: flex;
   flex-flow: row wrap;
@@ -63,6 +104,8 @@ i {
 #toggleTheme {
   font-size: 1.5rem;
   color: var(--primary-color);
+  cursor: pointer;
+  transition: ease-in-out .4s;
 }
 
 .menu {
@@ -80,7 +123,7 @@ i {
   position: fixed;
   bottom: 0;
   justify-content: space-between;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--primary-border-color);
 }
 
 .menu--mobile .menu__link {
@@ -121,21 +164,113 @@ i {
   gap: 1rem;
 }
 
+.menu--social {
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  background: transparent;
+  border-radius: 3.125rem;
+  padding: 0.875rem 1.5rem;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out .3s;
+}
+
+.btn span, .btn i {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.btn--primary span {
+  color: var(--primary-color);
+}
+
+.btn--primary {
+  border: 1px solid var(--primary-color);
+}
 
 main {
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem 1rem;
+}
+
+.main__content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__content2 iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 6.25rem 1rem 2rem 1rem;
+  background: var(--secondary-bg-color);
+  margin-top: -5.5rem;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  text-transform: none;
+}
+
+.skills__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 50rem;
+}
+
+.skills__logo {
+  height: 2.4rem;
+}
+
+footer {
+  margin-bottom: 5rem;
 }
 
 footer p {
   font-size: .875rem;
   text-align: center;
+  padding: 1rem;
 }
 
 
 @media (min-width: 768px) {
   .header {
     position: fixed;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--primary-border-color);
     padding: 1rem 6rem;
     background: var(--primary-bg-color);
   }
@@ -152,10 +287,85 @@ footer p {
   .header__toggle {
     min-width: 30%;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  main {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .main__content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills {
+    padding: 6.25rem 6rem 2rem 6rem;
+    margin-top: -6rem;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding: 12rem 6rem 2rem;
+  }
+
+  .main__content1 .btn {
+    width: auto;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem 6rem 4rem;
+  }
+
+  .skills h2 {
+    font-size: 3.5rem;
+    width: 60%;
+  }
+
+  .skills__list {
+    gap: 1rem;
+  }
+
+  .skills__item {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .skills__logo {
+    height: 3rem;
+  }
 }
 
 @media (min-width: 1400px) {
+  h1 {
+    font-size: 6.25rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
   .header {
     padding: 1rem 15rem;
   }
+
+  main {
+    padding: 12rem 15rem 2rem;
+  }
+
+  
+  .skills {
+    padding: 10rem 15rem 4rem;
+  }
+
 }
