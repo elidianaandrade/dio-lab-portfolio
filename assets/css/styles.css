@@ -24,10 +24,17 @@
 body {
   background: var(--primary-bg-color);
   font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
 }
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 i {
@@ -41,6 +48,11 @@ i {
   align-items: center;
   width: 100%;
   padding: 0.5rem 1rem;
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__brand .brand__logo {
@@ -81,7 +93,9 @@ i {
 }
 
 .menu__link.active .menu__icon, 
-.menu__link.active .menu__text {
+.menu__link.active .menu__text,
+.menu__link:hover .menu__icon, 
+.menu__link:hover .menu__text {
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -99,9 +113,49 @@ i {
   text-transform: uppercase;
 }
 
+.header__nav {
+  display: none;
+}
+
+.menu--principal {
+  gap: 1rem;
+}
+
+
+main {
+  padding: 5rem;
+}
+
+footer p {
+  font-size: .875rem;
+  text-align: center;
+}
+
+
 @media (min-width: 768px) {
-  .menu--mobile {
+  .header {
+    position: fixed;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 6rem;
+    background: var(--primary-bg-color);
+  }
+
+  .nav--mobile {
     display: none;
+  }
+
+  .header__nav {
+    display: flex;
+  }
+
+  .header__nav,
+  .header__toggle {
+    min-width: 30%;
   }
 }
 
+@media (min-width: 1400px) {
+  .header {
+    padding: 1rem 15rem;
+  }
+}
