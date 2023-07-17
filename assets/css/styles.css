@@ -77,6 +77,19 @@ h1 {
 h2 {
   font-size: 2rem;
   text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+h3 {
+  font-size: 1.55rem;
+  text-align: left;
+}
+
+h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: left;
 }
 
 h1, h2, h3 {
@@ -87,8 +100,12 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   text-align: justify;
+}
+
+span {
+  font-size: 1rem;
 }
 
 .header {
@@ -210,7 +227,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main, .projects {
+main, .projects, .about {
   padding: 2.5rem 1rem;
 }
 
@@ -304,25 +321,23 @@ main {
   gap: 1rem;
 }
 
-.card__title {
-  font-size: 1.5rem;
-}
-
 .card__description {
   font-size: 1rem;
   color: var(--title-color);
 }
 
-.card__list {
+.card__list, .about__list {
   margin-left: 1.25rem
 }
 
-.card__item {
+.card__item, .about__item {
   list-style: disc;
 }
 
-.card__buttons {
+.card__buttons, .description__buttons {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .card__buttons .btn {
@@ -351,6 +366,114 @@ main {
   margin: auto;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+.about__content1, .about__content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.about__photo {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  border-radius: 50rem;
+  border: 1px solid var(--primary-border-color);
+}
+
+.about__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.about__icons {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+}
+
+.about__icons i {
+  font-size: 1.25rem;
+}
+
+.about__icons span {
+  font-size: 1rem;
+}
+
+.about__content2 .col1, 
+.about__content2 .col2 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 2rem;
+}
+
+.about__content2 .col1 .row1,
+.about__content2 .col1 .row2 {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem; 
+}
+
+.accordion__header {
+  width: 100%;
+  display: flex;
+  padding: 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--primary-border-color);
+  background: transparent;
+}
+
+.accordion__header span {
+  color: var(--title-color);
+  font-size: 1.15rem;
+}
+
+.accordion__header.start {
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+
+.accordion__header.end,
+.accordion__item.active .accordion__body.end {
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+
+.accordion__item.active .accordion__header.end{
+  border-radius: 0;
+}
+
+.accordion__body {
+  display: none;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border: 1px solid var(--primary-border-color);
+}
+
+.accordion__item.active .accordion__header {
+  background: var(--secondary-bg-color);
+}
+
+.accordion__item.active .accordion__body {
+  display: flex;
+}
+
+.accordion__item.active .bi-caret-down-fill {
+  transform: rotate(180deg);
+}
+
 footer {
   margin-bottom: 5rem;
 }
@@ -360,7 +483,6 @@ footer p {
   text-align: center;
   padding: 1rem;
 }
-
 
 /* Responsividade */
 @media (min-width: 768px) {
@@ -390,10 +512,9 @@ footer p {
 
   h2 {
     font-size: 3rem;
-    letter-spacing: 0.4rem;
   }
 
-  main, .projects {
+  main, .projects, .about {
     padding: 8rem 6rem 4rem 6rem;
   }
 
@@ -426,12 +547,36 @@ footer p {
   .card__cover {
     width: 55%;
   }
+
+  .about {
+    gap: 5rem;
+  }
+
+  .about__content1, .about__content2 {
+    display: grid;
+    grid-template-columns: 34% 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about__description h2 {
+    text-align: left;
+  }
+
+  .description__buttons {
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: 1200px) {
 
   h2 {
     font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
   }
 
   main {
@@ -466,15 +611,12 @@ footer p {
     height: 3rem;
   }
 
-  .card__title {
-    font-size: 2.5rem;
-  }
-
   .card__description, .card__item {
     font-size: 1.25rem;
   }
 
-  .card__buttons .btn {
+  .card__buttons .btn,
+  .description__buttons .btn {
     width: auto;
   }
 }
@@ -486,6 +628,10 @@ footer p {
 
   h2 {
     font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 3.25rem;
   }
 
   p {
@@ -500,12 +646,8 @@ footer p {
     padding: 12rem 15rem 2rem;
   }
   
-  .technologies, .projects {
+  .technologies, .projects, .about {
     padding: 10rem 15rem 4rem;
-  }
-
-  .card__title {
-    font-size: 3.25rem;
   }
 
 }
