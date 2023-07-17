@@ -144,6 +144,12 @@ span {
   width: 100%;
 }
 
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
 .menu--mobile {
   width: 100vw;
   position: fixed;
@@ -153,12 +159,9 @@ span {
 }
 
 .menu--mobile .menu__link {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 0.5rem 1rem;
-  gap: .5rem;
 }
 
 .menu__link.active .menu__icon, 
@@ -227,7 +230,7 @@ span {
   border: 1px solid var(--primary-color);
 }
 
-main, .projects, .about {
+main, .projects, .about, .contact {
   padding: 2.5rem 1rem;
 }
 
@@ -433,6 +436,7 @@ main {
   align-items: center;
   border: 1px solid var(--primary-border-color);
   background: transparent;
+  text-align: left;
 }
 
 .accordion__header span {
@@ -472,6 +476,28 @@ main {
 
 .accordion__item.active .bi-caret-down-fill {
   transform: rotate(180deg);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact .btn {
+  width: auto;
+}
+
+.contact .email {
+  text-transform: lowercase;
 }
 
 footer {
@@ -516,6 +542,13 @@ footer p {
 
   main, .projects, .about {
     padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .contact {
+    padding: 6rem;
+  }
+  .contact p {
+    width: 80%;
   }
 
   .main__content1 {
