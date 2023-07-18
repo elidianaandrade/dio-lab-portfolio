@@ -115,6 +115,7 @@ span {
   align-items: center;
   width: 100%;
   padding: 0.5rem 1rem;
+  z-index: 2;
 }
 
 .header__toggle {
