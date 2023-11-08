@@ -438,6 +438,8 @@ main {
   border: 1px solid var(--primary-border-color);
   background: transparent;
   text-align: left;
+  cursor: pointer;
+  transition: ease-in-out .3s;
 }
 
 .accordion__header span {
@@ -465,7 +467,7 @@ main {
   align-items: flex-start;
   gap: 0.625rem;
   border: 1px solid var(--primary-border-color);
-}
+  }
 
 .accordion__item.active .accordion__header {
   background: var(--secondary-bg-color);
