@@ -73,7 +73,6 @@ a {
 
 a:hover {
   color: var(--primary-color);
-  font-weight: 600;
 }
 
 i {
@@ -114,13 +113,12 @@ h1, h2, h3 {
   font-weight: 200;
 }
 
-p {
-  font-size: 1.15rem;
-  text-align: justify;
+p, span, li {
+  font-size: 1rem;
 }
 
-span {
-  font-size: 1rem;
+p {
+  text-align: justify;
 }
 
 .header {
@@ -185,7 +183,6 @@ span {
 .menu__link:hover .menu__icon, 
 .menu__link:hover .menu__text {
   color: var(--primary-color);
-  font-weight: 600;
 }
 
 .menu__icon, .menu__text {
@@ -341,7 +338,6 @@ main {
 }
 
 .card__description {
-  font-size: 1rem;
   color: var(--title-color);
 }
 
@@ -425,10 +421,6 @@ main {
   font-size: 1.25rem;
 }
 
-.about__icons span {
-  font-size: 1rem;
-}
-
 .about__content2 .col1, 
 .about__content2 .col2 {
   display: flex;
@@ -459,7 +451,6 @@ main {
 
 .accordion__header span {
   color: var(--title-color);
-  font-size: 1.15rem;
 }
 
 .accordion__header.start {
@@ -551,7 +542,7 @@ footer p {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   h2 {
@@ -662,8 +653,8 @@ footer p {
     height: 3rem;
   }
 
-  .card__description, .card__item {
-    font-size: 1.25rem;
+  p, span, li {
+    font-size: 1.15rem;
   }
 
   .card__buttons .btn,
@@ -683,10 +674,6 @@ footer p {
 
   h3 {
     font-size: 3.25rem;
-  }
-
-  p {
-    font-size: 1.5rem;
   }
 
   .header {
