@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Front-end Refatorado com Next.js 15 e Tailwind CSS v4
 
-## Getting Started
+[![DIO](https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png)](https://www.dio.me/)  
+**Portfólio Front-end Refatorado**
 
-First, run the development server:
+Repositório desenvolvido a partir do lab **Construindo seu Portfólio Front-end do Zero** da [Digital Innovation One](https://www.dio.me/), refatorado por Lucas Gomes utilizando tecnologias modernas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[![Link do Lab](https://img.shields.io/badge/▶-000?style=for-the-badge&logo=movie&logoColor=E94D5F)](https://web.dio.me/lab/construindo-seu-portfolio-front-end-do-zero/learning/81cbe4c1-6e9e-4ce3-be7d-412aef4efb24) 
+[![Acesse o Lab na Plataforma](https://img.shields.io/badge/Acesse%20o%20Lab%20na%20Plataforma-E94D5F?style=for-the-badge)](https://web.dio.me/lab/construindo-seu-portfolio-front-end-do-zero/learning/81cbe4c1-6e9e-4ce3-be7d-412aef4efb24)
+
+## Sobre a Refatoração
+
+Este projeto é uma refatoração completa do portfólio original desenvolvido por [Elidiana Andrade](https://github.com/elidianaandrade). A refatoração foi realizada por Lucas Gomes, transformando o site original (construído com HTML, CSS e JavaScript) em uma aplicação moderna utilizando Next.js 15, Tailwind CSS v4 e componentes shadcn/ui.
+
+## Tecnologias Utilizadas na Refatoração
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS%20v4-000?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8) ![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&logo=typescript&logoColor=3178C6) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?style=for-the-badge&logo=shadcnui&logoColor=white)  
+
+## Melhorias Implementadas
+
+- **Arquitetura Moderna**: Migração para o Next.js 15 com App Router
+- **Estilização Avançada**: Implementação do Tailwind CSS v4 com tema claro/escuro
+- **Componentes Reutilizáveis**: Utilização da biblioteca shadcn/ui
+- **Tipagem Segura**: Adição de TypeScript para maior segurança e manutenibilidade
+- **Responsividade Aprimorada**: Layout totalmente responsivo para todos os dispositivos
+- **Acessibilidade**: Melhorias de acessibilidade seguindo as melhores práticas
+- **Performance**: Otimizações de carregamento e renderização
+
+## Estrutura do Projeto
+
+
+O projeto foi reorganizado seguindo as melhores práticas do Next.js 15:
+
+```
+├── app/                  # Diretório principal do App Router
+│   ├── layout.tsx        # Layout principal da aplicação
+│   ├── page.tsx          # Página inicial
+│   └── globals.css       # Estilos globais com Tailwind
+├── components/           # Componentes reutilizáveis
+│   ├── header.tsx        # Cabeçalho com navegação
+│   ├── hero.tsx          # Seção principal
+│   ├── projects.tsx      # Seção de projetos
+│   ├── about.tsx         # Seção sobre
+│   ├── contact.tsx       # Seção de contato
+│   ├── footer.tsx        # Rodapé
+│   └── ui/               # Componentes shadcn/ui
+├── public/               # Arquivos estáticos
+└── tailwind.config.ts    # Configuração do Tailwind CSS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Executar o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório  
+2. Instale as dependências:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
 
-## Learn More
+## Implantação
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto pode ser facilmente implantado em plataformas como Vercel, Netlify ou GitHub Pages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Créditos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Design Original**: [Elidiana Andrade](https://github.com/elidianaandrade)
+- **Refatoração**: Lucas Gomes
+- **Lab Original**: [Digital Innovation One](https://www.dio.me/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##
+<div align="center">
+  Projeto original por <a href="https://github.com/elidianaandrade">Elidiana Andrade</a> | 
+  Refatorado com 💙 por Lucas Gomes
+</div>
