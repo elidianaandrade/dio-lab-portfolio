@@ -1,20 +1,18 @@
-\## Apresentação
+## Apresentação
 
-Me chamo Kaique e estou começando a desbravar esse universo da programação, comecei o curso da DIO-PYTHON, estou mais perdido que cedo no tiroteio, mais com foco persistencia e determinação vou conseguir, caso alguém queira ser meu mentor nessa jornada ficaria muito feliz!
+  Me chamo Kaique e estou começando a desbravar esse universo da programação,
+  iniciei o curso da DIO-PYTHON, estou mais perdido que cego em um tiroteio, 
+  pórem com foco persistência e determinação vou conseguir, 
+  caso alguém queira ser meu mentor nessa jornada ficaria muito feliz!
 
 
-
-\- Hobby
+# - Hobby
 
 Handebol | Voleibol | Música | Trilha  | Tecnologia
 
 
+# - Contato
 
-
-
-\- Contato
-
-[!\[E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge\&logo=microsoft-outlook\&logoColor=007BFF)](mailto:okamppos@htomail.com) 
-[!\[Instagram](https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)](https://www.instagram.com/okamppos/) 
-[!\[WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge\&logo=whatsapp\&logoColor=white)](https://wa.me/+5515996703641)
-
+[![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](mailto:"okamppos@hotmail.com")
+[![Instagram](https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/okamppos/)
+ 	[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+5515996703641)
