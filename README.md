@@ -12,6 +12,12 @@ Repositório desenvolvido para fins didáticos, com a disponibilização de mate
 ## Objetivo
 Construir seu Primeiro Portfólio Front-end do Zero.
 
+## Status
+<div align="center">
+  <a href="https://github.com/carineguzzi">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=carineguzzi&show_icons=false&theme=dark&include_all_commits=true&count_private=true"/>
+</div>
+
 ## Tecnologias
 [![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript&logoColor=30A3DC)]()
 [![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=E94D5F)]() 
@@ -20,6 +26,12 @@ Construir seu Primeiro Portfólio Front-end do Zero.
 
 ## Desafio: Portfólio Front-end
 Crie seu próprio portfólio front-end, atentando-se para que seja autêntico, visualmente atraente e responsivo. Sinta-se livre para utilizar as tecnologias que desejar e expressar sua personalidade e estilo através do design e dos elementos interativos do seu portfólio. Após concluir, você pode hospedá-lo em uma plataforma de sua escolha, como GitHub Pages, Netlify, Vercel, etc.
+
+## Linguagens Mais Usadas
+<div align="center">
+  <a href="https://github.com/carineguzzi">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=carineguzzi&layout=compact&langs_count=7&theme=dark"/>
+</div>
 
 ##
 <div align="center">Feito com 💙 por <a href="https://github.com/elidianaandrade">Eli</a>.</div>
