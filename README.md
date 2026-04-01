@@ -12,6 +12,9 @@ Repositório desenvolvido para fins didáticos, com a disponibilização de mate
 ## Objetivo
 Construir seu Primeiro Portfólio Front-end do Zero.
 
+## Contribuição no Lab Open Source
+Este repositório foi utilizado para realização do lab da DIO sobre contribuição em projetos open source.
+
 ## Tecnologias
 [![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript&logoColor=30A3DC)]()
 [![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=E94D5F)]() 
